@@ -1,0 +1,87 @@
+{
+  "type": "file",
+  "connection": "s3a://gamestreams/",
+  "config": {
+    "fs.s3a.access.key": "minio",
+    "fs.s3a.secret.key": "SU2orange!",
+    "fs.s3a.endpoint": "http://minio:9000",
+    "fs.s3a.connection.ssl.enabled": "false",
+    "fs.s3a.path.style.access": "true"
+  },
+  "workspaces": {
+    "default": {
+      "location": "/",
+      "writable": true,
+      "defaultInputFormat": null,
+      "allowAccessOutsideWorkspace": false
+    }
+  },
+  "formats": {
+    "txt": {
+      "type": "text",
+      "extensions": [
+        "txt"
+      ],
+      "fieldDelimiter": " "
+    },
+    "psv": {
+      "type": "text",
+      "extensions": [
+        "tbl"
+      ],
+      "fieldDelimiter": "|"
+    },
+    "csv": {
+      "type": "text",
+      "extensions": [
+        "csv"
+      ],
+      "extractHeader": true
+    },
+    "tsv": {
+      "type": "text",
+      "extensions": [
+        "tsv"
+      ],
+      "fieldDelimiter": "\t"
+    },
+    "excel": {
+      "type": "excel",
+      "extensions": [
+        "xlsx"
+      ],
+      "lastRow": 1048576
+    },
+    "parquet": {
+      "type": "parquet"
+    },
+    "json": {
+      "type": "json",
+      "extensions": [
+        "json",
+        "jsn",
+        "jsonfile"
+      ]
+    },
+    "avro": {
+      "type": "avro",
+      "extensions": [
+        "avro"
+      ]
+    },
+    "sequencefile": {
+      "type": "sequencefile",
+      "extensions": [
+        "seq"
+      ]
+    },
+    "csvh": {
+      "type": "text",
+      "extensions": [
+        "csvh"
+      ],
+      "extractHeader": true
+    }
+  },
+  "enabled": true
+}

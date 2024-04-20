@@ -1,0 +1,8 @@
+{
+  "name" : "mongo",
+  "config" : {
+    "type" : "mongo",
+    "connection" : "mongodb://mongo:SU2orange!@mongo:27017/",
+    "enabled" : true
+  }
+}

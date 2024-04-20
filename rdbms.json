@@ -1,0 +1,11 @@
+{
+  "name" : "mssql",
+  "config" : {
+    "type" : "jdbc",
+    "driver" : "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+    "url" : "jdbc:sqlserver://mssql;databaseName=sidearmdb;encrypt=true;trustServerCertificate=true",
+    "username" : "sa",
+    "password" : "SU2orange!",
+    "enabled" : true
+  }
+}
